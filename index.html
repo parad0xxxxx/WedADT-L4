@@ -5,6 +5,20 @@
     <meta charset="utf-8" />
     <title>What is Sass? Your guide to this top CSS preprocessor</title>
     <link rel="stylesheet" href="css.css">
+    <script type="text/javascript"><!--
+            var imgObj = null;
+
+            function init() {
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative';
+               imgObj.style.left = '0px';
+            }
+            function moveRight() {
+               imgObj.style.left = parseInt(imgObj.style.left) + 50 + 'px';
+            }
+
+            window.onload = init;
+         //--></script>
 </head>
 <body>
 
@@ -148,7 +162,7 @@
                 not fully compliant with CSS syntax, but it's quicker to write
             </li>
         </ul>
-                        
+
         <p>
             <i>
 
@@ -181,7 +195,7 @@
 
         <p><b>For example:</b></p>
 
-
+        <code style=""margin>
 
         <p>
             <i>
@@ -244,8 +258,8 @@
         </p>
 
         <p><i>}</i></p>
-
-
+            
+</code>
 
         <h1>
             Nesting
@@ -823,4 +837,11 @@
         </p>
 
     </div>
+
+    <form>
+        <img id="myImage" src="arrow.jpeg" width="420" height="381" />
+        <p>Click button below to move the image to right</p>
+        <input type="button" value="Click Me" onclick="moveRight();" />
+    </form>
+
 </html>
